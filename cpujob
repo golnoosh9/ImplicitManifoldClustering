@@ -1,0 +1,5 @@
+#BSUB -o cpu_test.%J
+#BSUB -R '(!gpu)'
+#BSUB -N
+#BSUB -J PythonJob
+/project/engineering/matlab/2018a/bin/matlab < OneClusterPOPFormulation.m
